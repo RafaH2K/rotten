@@ -1,10 +1,8 @@
-const { Router } = require('express');
+const { Router } = require("express");
 
 const router = Router();
+const { loguearUser } = require("../controllers/login.controllers");
 
-router.get('/', (req, res) =>{
-    res.send('loguearte')
-})
-
+router.get("/", loguearUser);
 
 module.exports = router;

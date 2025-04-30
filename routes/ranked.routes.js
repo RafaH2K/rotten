@@ -1,9 +1,8 @@
-const { Router } = require('express');
+const { Router } = require("express");
 
 const router = Router();
+const { ranked } = require("../controllers/ranked.controllers");
 
-router.get('/', (req, res) =>{
-    res.send('ranked de profes');
-})
+router.get("/", ranked);
 
 module.exports = router;

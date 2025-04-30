@@ -1,27 +1,22 @@
-const { Router } = require('express');
+const { Router } = require("express");
 
 const router = Router();
+const {
+  obtenerTodosProfes,
+  obtenerProfe,
+  añadirProfe,
+  editarProfe,
+  eliminarProfe,
+} = require("../controllers/profes.controllers");
 
-router.get('/profes', (req, res) => {
-    res.send('profes obtenidos');
-})
+router.get("/profes", obtenerTodosProfes);
 
-router.get('/profes/:profeId', (req, res) => {
-    const {profeId} = req.params
-    res.send(`profe obtenido con el id ${profeId}`);
-})
+router.get("/profes/:profeId", obtenerProfe);
 
-router.post('/profes', (req, res) => {
-    res.send('profe creado');
-})
+router.post("/profes", añadirProfe);
 
-router.put('/profes/:profeId', (req, res) => {
-    res.send('profe actualizado');
-})
+router.put("/profes/:profeId", editarProfe);
 
-router.delete('/profes/:profeId', (req, res) => {
-    res.send('profe eliminado');
-})
+router.delete("/profes/:profeId", eliminarProfe);
 
 module.exports = router;
- 
