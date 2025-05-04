@@ -5,3 +5,4 @@ const loguearUser = (req, res) => {
 module.exports = {
   loguearUser,
 };
+
