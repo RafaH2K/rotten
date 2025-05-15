@@ -1,0 +1,1 @@
+This project is for rate every teacher in the University of Colima. The objective is let the students express their experiences by rating them, using this as a method to protect their privacy, but following the rules and conditions to make the results fair./home/oem/rotten/home/oem/rotten/home/oem/rotten
